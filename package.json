@@ -9,7 +9,7 @@
     "web": "expo start --web",
     "build": "npx expo build",
     "eject": "expo eject",
-    "dev": "set EXPO_NO_TELEMETRY=true&& expo start",
+    "dev": "EXPO_NO_TELEMETRY=true expo start",
     "build:web": "EXPO_NO_TELEMETRY=1 npx expo export --platform web",
     "lint": "expo lint"
   },
@@ -20,7 +20,10 @@
     "@react-native-async-storage/async-storage": "^2.1.2",
     "@supabase/supabase-js": "^2.49.8",
     "expo": "~53.0.9",
+    "expo-asset": "~11.1.5",
+    "expo-file-system": "~18.1.10",
     "expo-font": "~13.3.1",
+    "expo-image-picker": "~16.1.4",
     "expo-location": "~18.1.5",
     "expo-router": "~5.0.7",
     "expo-splash-screen": "~0.30.8",
@@ -33,15 +36,11 @@
     "react-native-safe-area-context": "5.4.0",
     "react-native-screens": "~4.10.0",
     "react-native-url-polyfill": "^2.0.0",
-    "react-native-web": "^0.20.0",
-    "expo-asset": "~11.1.5",
-    "expo-image-picker": "~16.1.4",
-    "expo-file-system": "~18.1.10"
+    "react-native-web": "^0.20.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/react": "~19.0.10",
-    "@types/react-native": "^0.73.0",
     "typescript": "~5.8.3"
   },
   "private": true
